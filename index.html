@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet", href="style.css">
+    <title>word counter</title>
+</head>
+<body>
+    <h1>Write your text here</h1>
+    <div class="content">
+    <div class="change">
+        <div class="text">Text</div>
+        <div class="bgc" id="blue1" ondblclick="changetxt('blue')"></div>
+        <div class="bgc" id="white1" ondblclick="changetxt('white')"></div>
+        <div class="bgc" id="black1" ondblclick="changetxt('black')"></div>
+        <div class="bgc" id="red1" ondblclick="changetxt('red')"></div>
+        <div class="bgc" id="orange1" ondblclick="changetxt('orange')"></div>
+    </div>
+    <textarea rows="20" cols="80" placeholder="Write here" id="text" oninput="countletter()"></textarea>
+    <div class="change">
+        <div class="text">Background </div>
+        <div class="bgc" id="blue" onclick="changebg('blue')" ></div>
+        <div class="bgc" id="white" onclick="changebg('white')" ></div>
+        <div class="bgc" id="black" onclick="changebg('black')" ></div>
+        <div class="bgc" id="red" onclick="changebg('red')" ></div>
+        <div class="bgc" id="orange" onclick="changebg('orange')" ></div>
+    </div>
+    </div>
+    <div class="result"><span id="letter">0</span> Letters and <span id="word">0</span> words</div>
+    <script src="script.js"></script>
+</body>
+</html>
